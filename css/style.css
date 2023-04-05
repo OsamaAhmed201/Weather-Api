@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.all-home{
+    background-color: #1e202b !important ;
+}
+.navbar{
+    background-color: rgba(22, 26, 25, 0.678) !important;
+}
+.navbar a{
+color: white;
+font-size: larger;
+margin: 10px;
+padding: 30px 0px;
+}
+.home{
+    background-image: url(../imgs/banner.png);
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+}
+.title_today{
+    background-color: #1e202b;
+    color: rgb(186, 184, 184);
+}
+.all_contian_today{
+    background-color: #252734;
+    color: white;
+    height: 260px;
+    border: solid 1.5px rgb(51, 49, 49);
+}
+.grad_temporray{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.all_tomorow{
+    background-color: #1e1f29;
+    color: white;
+}
+.title_tomorow{
+background-color: #191b24;
+color: rgb(186, 184, 184);
+}
+
+.h-card{
+   height: 260px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: solid 1.5px rgb(51, 49, 49);
+}
+
+.Desc_tomorow,#desc {
+    color: rgb(58, 58, 244);
+    margin-top: 20px;
+}
+.max_grad{
+    margin-bottom: 10px;
+}
+
+.f_icons{
+font-size: 26px;
+margin: 2px;
+}
+.f_icons:hover{
+    color: rgb(146, 127, 105);
+}
+.end_footer{
+    background-color: #272933;
+     color: white;
+}
+.a_icon{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(96, 96, 239);
+}
+.nav-link:focus{
+    color: rgb(96, 96, 239) !important; 
+}
+

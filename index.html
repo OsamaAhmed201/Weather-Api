@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather App</title>
+</head>
+
+<body class="all-home">
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d">
+      <div>
+        <a class="navbar-brand" href="#">
+          <img src="imgs/logo.png" alt="">
+          <span class="text-primary fs-2">Weather</span>
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+ 
+    <div class="home" >
+      <div class="input-group w-75 m-auto mb-3 pt-5 ">
+        <input id="search" type="text" class="form-control p-3" placeholder="Find your Location..."
+          aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-primary " type="button" id="button-addon2">Button</button>
+      </div>
+      <div class="container py-5">
+        <div class="row gx-0">
+          <div class="col-md-12 col-lg-4 ">
+            <div class="today ">
+              <div id="title_today"
+                class=" title_today text-muted d-flex justify-content-between align-items-center p-1">
+                <p id="asm_day" class="asm_day"></p>
+                <p id="tarkh_day" class="tarkh_day"></p>
+              </div>
+
+              <div id="all_contian_today " class="p-4 all_contian_today ">
+                <p id="Location" class="title_city"></p>
+                <div class="row ">
+                  <div class="col-8 text-center">
+                    <span id="grad_temporray" class="h1 grad_temporray"></span>
+                    <span class="grad_temporray"><sup>o</sup>C</span>
+                  </div>
+                  <div class="col-4">
+                    <img id="img_today" src="imgs/116.png" alt="">
+                  </div>
+                </div>
+                <p id="desc"></p>
+                <div class="today_footer ">
+
+                  <span>
+                    <img src="imgs/icon-umberella.png" alt="">
+                    <span id="wind">%</span>
+                  </span>
+                  <span>
+                    <img src="imgs/icon-wind.png" alt="">
+                    <span id="ryah"></span>
+                    <span>k/m</span>
+                  </span>
+                  <span>
+                    <img src="imgs/icon-compass.png" alt="">
+                    <span id="posla"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-4">
+            <div class="tomorow text-center ">
+              <div id="title_tomorow" class="title_tomorow p-1">
+                <p id="name_day" class="name_day"></p>
+              </div>
+              <div class="all_tomorow h-card">
+                <div>
+                  <img id="img_tomorow" class="img_tomorow" src="" alt=""><br>
+                  <span id="max_grad" class="h3 grad_tomorow max_grad"> </span>
+                  <span><sup>o</sup>C</span> <br>
+                  <span id="min_grad" class="min_grad min_grad text-muted py-2"></span>
+                  <span class="text-muted"><sup>o</sup>C</span> <br>
+
+                  <p id="Desc_tomorow" class="Desc_tomorow ">clear</p>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-lg-4 ">
+            <div class="tomorow text-center  ">
+              <div id="title_tomorow" class="title_tomorow p-1">
+                <p id="name_day" class="name_day"></p>
+              </div>
+              <div class="all_tomorow h-card">
+                <div>
+                  <img id="img_tomorow" class="img_tomorow" src="" alt=""><br>
+                  <span id="max_grad" class="h3 grad_tomorow max_grad"> </span>
+                  <span><sup>o</sup>C</span> <br>
+                  <span id="min_grad" class="min_grad max_grad text-muted "></span>
+                  <span class="text-muted"><sup>o</sup>C</span> <br>
+                  <p id="Desc_tomorow" class="Desc_tomorow">clear</p>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="end_footer ">
+        <div class="container d-flex justify-content-between pb-4 pt-4">
+          <div>
+            <h6> Designed by <b>Osama Ahmed</b></h6>
+          </div>
+
+          <div>
+            <a class="a_icon" href="https://www.facebook.com/profile.php?id=100026118154637"><i
+                class="fa-brands fa-facebook f_icons"></i></a>
+            <a class="a_icon" href="https://www.linkedin.com/in/osama-ahmed-621735238/"><i
+                class="fa-brands fa-linkedin f_icons"></i></a>
+            <a class="a_icon" href="https://github.com/OsamaAhmed201"><i class="fa-brands fa-github f_icons"></i></a>
+            <a class="a_icon" href="https://twitter.com/OSAMAAH45166989"><i
+                class="fa-brands fa-twitter f_icons"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+
+
+
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
