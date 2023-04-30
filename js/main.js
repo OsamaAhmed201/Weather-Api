@@ -32,7 +32,7 @@ days = [
 ]
 
 async function getDataWeather() {
-  apiRespons = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b73aee4d88ec4d97b7c12221212804&q=${currentCity}&days=3`)
+  apiRespons = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e9333a9ba36c4ab98f0225607233004&q=${currentCity}&days=3`)
   reaponsData = await apiRespons.json()
  
 
